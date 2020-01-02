@@ -8,7 +8,7 @@ Enjoy!
  
 ## Requirements:
 - python>=3.5
-- pytorch>=0.4.1(>=1.1.0 for DistributedDataParallel training)
+- pytorch==0.4.1 or 1.1.0 (DistributedDataParallel training only available using 1.1.0)
 - tensorboardX(optional)
 
 ## Getting Started
