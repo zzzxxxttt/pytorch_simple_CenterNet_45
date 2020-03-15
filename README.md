@@ -1,5 +1,7 @@
 # Pytorch simple CenterNet-45
 
+If you are looking for another CenterNet, try [this](https://github.com/zzzxxxttt/pytorch_simple_CenterNet_47)!
+
 This repository is a simple pytorch implementation of [Objects as Points](https://arxiv.org/abs/1904.07850), some of the code is taken from the [official implementation](https://github.com/xingyizhou/CenterNet).
 As the name says, this version is **simple** and **easy to read**, all the complicated parts (dataloader, hourglass, training loop, etc) are all rewrote in a simpler way.    
 By the way the support of **nn.parallel.DistributedDataParallel** is also added, so this implementation trains significantly faster than the official code (~ **75 img/s** vs ~36 img/s on 8 GPUs).
