@@ -161,6 +161,7 @@ python demo.py --img_dir ./demo.jpg \
 ```
 
 **Demo result:**
+
 <img src="https://github.com/zzzxxxttt/pytorch_simple_CenterNet_45/blob/master/data/demo_results.png" width="500" />
 
 
