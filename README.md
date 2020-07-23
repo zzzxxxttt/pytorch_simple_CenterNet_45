@@ -146,9 +146,22 @@ Hourglass-104 (DP)|512|39.9/42.3/45.0
 Hourglass-104 (DDP)|512|40.5/42.6/45.3
 
 ### PascalVOC:
-Model|Training image size|mAP
-:---:|:---:|:---:
-ResDCN-18 (DDP)|384|71.19/72.99
-ResDCN-18 (DDP)|512|72.76/75.69
+Model|Training image size|mAP|model
+:---:|:---:|:---:|:---:
+ResDCN-18 (DDP)|384|71.19/72.99|
+ResDCN-18 (DDP)|512|72.76/75.69|[password: s8d5](https://pan.baidu.com/s/1emMdi155veG3VvnO4fTjcQ)
+
+## DEMO
+```
+python demo.py --img_dir ./demo.jpg \
+               --ckpt_dir ./ckpt/pascal_resdcn18_512/checkpoint.t7 \ 
+               --dataset pascal \
+               --arch resdcn_18 \
+               --img_size 512 \
+```
+
+**Demo result:**
+<img src="https://github.com/zzzxxxttt/pytorch_simple_CenterNet_45/blob/master/data/demo_results.png" width="500" />
+
 
 

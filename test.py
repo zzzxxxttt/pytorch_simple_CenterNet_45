@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 import numpy as np
+from tqdm import tqdm
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'lib'))
 
@@ -29,10 +30,10 @@ parser = argparse.ArgumentParser(description='centernet')
 
 parser.add_argument('--root_dir', type=str, default='./')
 parser.add_argument('--data_dir', type=str, default='./data')
-parser.add_argument('--log_name', type=str, default='test')
+parser.add_argument('--log_name', type=str, default='pascal_resdcn18_512')
 
-parser.add_argument('--dataset', type=str, default='coco', choices=['coco', 'pascal'])
-parser.add_argument('--arch', type=str, default='large_hourglass')
+parser.add_argument('--dataset', type=str, default='pascal', choices=['coco', 'pascal'])
+parser.add_argument('--arch', type=str, default='resdcn_18')
 
 parser.add_argument('--img_size', type=int, default=512)
 
@@ -88,7 +89,7 @@ def main():
 
   results = {}
   with torch.no_grad():
-    for inputs in data_loader:
+    for inputs in tqdm(data_loader):
       img_id, inputs = inputs[0]
 
       detections = []
