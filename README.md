@@ -148,7 +148,7 @@ Hourglass-104 (DDP)|512|40.5/42.6/45.3
 ### PascalVOC:
 Model|Training image size|mAP|model
 :---:|:---:|:---:|:---:
-ResDCN-18 (DDP)|384|71.19/72.99|
+ResDCN-18 (DDP)|384|71.19/72.99|[password: 83rv](https://pan.baidu.com/s/1o87uQewrbQWbZ-QJVjiVFA)
 ResDCN-18 (DDP)|512|72.76/75.69|[password: s8d5](https://pan.baidu.com/s/1emMdi155veG3VvnO4fTjcQ)
 
 ## Demo:
