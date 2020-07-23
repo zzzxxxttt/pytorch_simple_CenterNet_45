@@ -151,7 +151,7 @@ Model|Training image size|mAP|model
 ResDCN-18 (DDP)|384|71.19/72.99|
 ResDCN-18 (DDP)|512|72.76/75.69|[password: s8d5](https://pan.baidu.com/s/1emMdi155veG3VvnO4fTjcQ)
 
-## DEMO
+## Demo:
 ```
 python demo.py --img_dir ./demo.jpg \
                --ckpt_dir ./ckpt/pascal_resdcn18_512/checkpoint.t7 \ 
@@ -160,7 +160,7 @@ python demo.py --img_dir ./demo.jpg \
                --img_size 512 \
 ```
 
-**Demo result:**
+**Demo results:**
 
 <img src="https://github.com/zzzxxxttt/pytorch_simple_CenterNet_45/blob/master/data/demo_results.png" width="500" />
 
